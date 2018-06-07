@@ -1,0 +1,28 @@
+
+body       {background-color:white;font-family: Tahoma;}
+header     {height: 100px;background-color: darkgreen;}
+.header    {padding: 10px 0;margin-bottom: 10px;}
+header img {margin-left: auto;margin-right: auto;}
+.container {margin-top:10px;padding-top: 10px; background-image:url(/images/pizza_1920x1250.jpg);background-repeat: no-repeat; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+#total-box {color:white;font-weight: bold;position:fixed;top:40%;left:-110px;width:130px;height:auto;background-color:darkred;padding:2% 0 2% 0;border-radius:0 20px 20px 0;transition:all;transition-duration:0.5s;transition-timing-function:ease-in-out;z-index:1;}
+#total-box:hover {position:fixed;top:40%;left:0px;width:130px;height:auto;background-color:grey;padding:2% 0 2% 0;
+	border-radius:0 20px 20px 0;}
+#total        {font-weight: bold;background-color: #FFFFFF;border: 0;width: 100px;}
+#pizzita      {margin-left: 30px;}
+#start-button {background-color: #FFF;color: grey;border-color: grey;border: 2px;}
+#start-button:hover {color:lightgrey;}
+#start-button img{margin-top: 8px;}
+.hideEffect    {display: none;}
+#area1 label, #area2 label, #area3 label {text-align: left;color: grey;font-weight: bold;}
+.error        {color: darkred;font-weight: bold;text-align: right;}
+.cardDisplay  {color: grey;font-weight: bold;text-align: right;}
+#toppings_inner_box {color:grey;}
+#area3       {color: grey;}
+#area3 label {margin-top: 15px;}
+#area3 input {margin: 5px;color: #3f95d1;}
+.align-btn    {text-align: center;margin-top: 20px;}
+#other-box    {display: none;}
+#fin-build-btn, #form-submit {background-color: lightslategrey;color: #FFFFFF;}
+#form-submit {display: none;}
+#end h1 {text-align: center;color: #3f95d1;}
+footer {margin-top: 5px;text-align: center;background-color: darkred;height: 100px;color: white;padding-top: 40px;}

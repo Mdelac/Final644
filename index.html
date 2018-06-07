@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Luigis Pizza</title>
+
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!--CSS-->
+    <link href="css/styles.css" rel="stylesheet">
+    
+    <!--FAVICON-->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!--SCRIPT-->
+    <script src="js/script.js"></script>
+</head>
+
+
+<body>
+    <!--HEADER-->
+    <header class="header clearfix">
+        <!--GREEN STRIPE--> 
+    </header>
+
+    <!--PIZZA ICON-->
+    <div id="pizzita" class="row justify-content-md-center col-sm-center">
+        <a id="start-button" class="btn btn-lg btn-success" href="#" role="button">Enjoy a <img src="images/logo.png"> Pizza</a>
+    </div>
+
+    <!--TOTAL-->
+    <div id="total-box" class="hideEffect">
+        <label for="total">Total:</label>
+        <br>$<input type="text" id="total" name="total" readonly/>
+    </div>
+
+    <!--CONTAINER-->
+    <div class="container">
+
+        <!--FORM-->
+        <div id="main" class=" marketing hideEffect">
+            <div class="col-md-auto">
+                <!--FORM-->
+                <form name="form" role="form" class="form-horizontal">
+
+                    <!--DELIVERY INFO FIELD-->
+                    <div id="delivery_info">
+                        <fieldset id="area1">
+                            <!--DELIVERY INFO TITLE-->
+                            <legend>Delivery Info</legend>
+
+                            <!--DELIVERY INFO NAME-->
+                            <div class="form-group">
+                                <label for="name" class="control-label col-md-auto">Name:</label>
+                                <div class="col-md-auto">
+                                    <input type="text" id="delivery-name" class="form-control" name="name" placeholder="Name" />
+                                </div>
+                            </div>
+
+                            <!--DELIVERY INFO ADDRESS TYPE-->
+                            <div class="form-group">
+                                <label for="address-type" class="control-label col-md-auto">Address Type:</label>
+                                <div class="col-md-auto">
+                                    <select id="address-type" name="addtype" class="form-control">
+                                    <option value="house">House</option>
+                                    <option value="apartment">Apartment</option>
+                                    <option value="business">Business</option>
+                                    <option value="campus">Campus</option>
+                                    <option value="hotel">Hotel</option>
+                                    <option value="dorm">Dorm</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                </div>
+
+                                <!--DELIVERY INFO ADDRESS OTHER BOX-->
+                                <div class="col-md-auto">
+                                    <input id="other-box" type="text" name="other" class="form-control" />
+                                </div>
+                            </div>
+
+                            <!--DELIVERY INFO STREET ADDRESS-->
+                            <div class="form-group">
+                                <label for="delivery_street_address" class="control-label col-md-auto">Street Address:</label>
+                                <div class="col-md-auto">
+                                    <input type="text" name="delivery_street_address" class="form-control" placeholder="Address" />
+                                </div>
+                            </div>
+
+                            <!--DELIVERY INFO NUMBER-->
+                            <div class="form-group">
+                                <label for="delivery_optional_apt" class="control-label col-sm-3">Number:</label>
+                                <div class="col-md-auto">
+                                    <input type="text" name="delivery_optional_apt" class="form-control" placeholder="Apt 123" />
+                                </div>
+                            </div>
+
+                            <!--DELIVERY INFO CITY-->
+                            <div class="form-group">
+                                <label for="delivery_city" class="control-label col-md-auto">City:</label>
+                                <div class="col-md-auto">
+                                    <input type="text" name="delivery_city" class="form-control" placeholder="City" />
+                                </div>
+                            </div>
+
+                            <!--DELIVERY INFO STATE-->
+                            <div class="form-group">
+                                <label for="delivery_state" class="control-label col-md-auto">State:</label>
+                                <div class="col-md-auto">
+                                    <input type="text" name="delivery_state" class="form-control" placeholder="State" />
+                                </div>
+                            </div>
+                            <!--DELIVERY INFO ZIP CODE-->
+                            <div class="form-group">
+                                <label for="delivery_zip" class="control-label col-md-auto">Zip Code:</label>
+                                <div class="col-md-auto">
+                                    <input type="text" name="delivery_zip" class="form-control" placeholder="Zip Code" />
+                                </div>
+                            </div>
+
+                            <!--DELIVERY INFO PHONE NUMBER-->
+                            <div class="form-group">
+                                <label for="phone" class="control-label col-md-auto">Phone Number:</label>
+                                <div class="col-md-auto">
+                                    <input type="text" name="phone" class="form-control" placeholder="619-377-4686" />
+                                </div>
+                            </div>
+
+                            <!--DELIVERY EMAIL-->
+                            <div class="form-group">
+                                <label for="email" class="control-label col-md-auto">Email:</label>
+                                <div class="col-md-auto">
+                                    <input type="text" name="email" class="form-control" placeholder="info@luigi.com" />
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </div>
+                    <!--DELIVERY INFO FIELD-->
+
+                    <!--BUILD YOUR ORDER-->
+                    <div id="build-order-section" class="col-md-auto">
+                        <div class="form-group">
+                            <!--BUILD YOUR ORDER FIELD-->
+                            <fieldset id="area3">
+                                <!--BUILD YOUR ORDER -->
+                                <legend>Build Your Order</legend>
+
+                                <!--DOUGH TYPE -->
+                                <div id="dough" class="form-group">
+
+                                    <!--DOUGH TYPE TITLE-->
+                                    <label for="radio" class="control-label col-md-auto">Dough Type:</label>
+
+                                    <!--DOUGH TYPE CHOICES-->
+                                    <div id="potential_error_placement" class="col-md-auto">
+                                        <input type="radio" name="dough" value="hand tossed" /> Hand Tossed
+                                        <br />
+                                        <input type="radio" name="dough" value="thin crust" /> Thin Crust
+                                        <br />
+                                        <input type="radio" name="dough" value="new york style" /> New York Style
+                                        <br />
+                                        <input type="radio" name="dough" value="gluten free" /> Gluten Free
+                                    </div>
+                                </div>
+
+                                <!--DOUGH SIZES CHOICES-->
+                                <div id="dough_box" class="form-group hideEffect">
+                                    <label for="pizza_selection" class="control-label col-md-auto">Selection:</label>
+                                    <div class="col-md-auto">
+                                        <select name="pizza_selection" id="pizza_selection" class="form-control">
+                                    <option value="0.00">Select to see available dough sizes</option>
+                                </select>
+                                    </div>
+                                </div>
+
+                                <!--CHEESE CHOICES-->
+                                <div id="cheese_box" class="form-group hideEffect">
+                                    <label for="cheese" class="control-label col-sm-3">Cheese:</label>
+                                    <div class="col-md-auto">
+                                        <select name="cheese" class="form-control">
+                                <option value="cheese-light">Light: no charge</option>
+                                <option value="cheese-normal" selected>Normal: no charge</option>
+                                <option value="cheese-extra">Extra: +$2.99</option>
+                                <option value="cheese-double">Double: +$3.99</option>
+                            </select>
+                                    </div>
+                                </div>
+
+                                <!--SAUCE CHOICES-->
+                                <div id="sauce_box" class="form-group hideEffect">
+                                    <label for="sauce" class="control-label col-sm-3">Sauce:</label>
+                                    <div class="col-md-auto">
+                                        <select name="sauce" class="form-control">
+                                <option value="sauce-regular" selected>Regular Tomato: no charge</option>
+                                <option value="sauce-hearty">Hearty Tomato: +$.99</option>
+                                <option value="sauce-bbq">BBQ Sauce: +$1.99</option>
+                            </select>
+                                    </div>
+                                </div>
+
+                                <!--TOPPINGS CHOICES-->
+                                <div id="toppings_box" class="form-group hideEffect">
+                                    <label for="toppings" class="control-label col-md-auto">Toppings: ($.99 extra for each)</label>
+                                    <div id="toppings_inner_box" class="col-md-auto">
+                                        <input type="checkbox" name="toppings" value="pepperoni" />Pepperoni
+                                        <input type="checkbox" name="toppings" value="sausage" />Sausage
+                                        <input type="checkbox" name="toppings" value="ham" />Ham
+                                        <input type="checkbox" name="toppings" value="bacon" />Bacon
+                                        <input type="checkbox" name="toppings" value="salami" />Salami
+                                        <input type="checkbox" name="toppings" value="peppers" />Peppers
+                                        <input type="checkbox" name="toppings" value="olives" />Olives
+                                        <input type="checkbox" name="toppings" value="jalapenos" />Jalapenos
+                                        <input type="checkbox" name="toppings" value="mushrooms" />Mushrooms
+                                        <input type="checkbox" name="toppings" value="pineapple" />Pineapple
+                                        <input type="checkbox" name="toppings" value="onion" />Onion
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <!--FINISH BUTTON-->
+                        <div id="fin-pizza-btn" class="col-md-auto">
+                            <div id="build-submit-btn" class="form-group align-btn">
+                                <input id="fin-build-btn" type="button" class="form control btn-lg" value="Finished Building your Pizza">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--BILLING INFO AREA-->
+                    <div id="billing_info_div" class="form-group hideEffect">
+                       
+                       <!--BILLING FIELD-->
+                        <fieldset id="area2">
+                            <legend>Billing Information</legend>
+                            
+                            <!--SAME AS DELIVERY-->
+                            <div class="form-group">
+                                <input type="checkbox" name="bill_info_same" id="bill_info_same" />
+
+                                <label for="bill_info_same" class="control-label">Same as delivery information</label>
+                            </div>
+                            
+                            <!--NAME DELIVERY-->
+                            <div class="form-group">
+                                <label for="bill_name" class="control-label col-md-auto">Name:</label>
+                                <div class="col-md-auto">
+                                    <input type="text" name="bill_name" class="form-control" placeholder="Name" />
+                                </div>
+                            </div>
+                            
+                            <!--STREET DELIVERY-->
+                            <div class="form-group">
+                                <label for="bill_street_address" class="control-label col-md-auto">Street Address:</label>
+                                <div class="col-md-auto">
+                                    <input type="text" name="bill_street_address" class="form-control" placeholder="Address" />
+                                </div>
+                            </div>
+                            
+                            <!--NUMBER DELIVERY-->
+                            <div class="form-group">
+                                <label for="bill_optional_apt" class="control-label col-md-auto">Number:</label>
+                                <div class="col-md-auto">
+                                    <input type="text" name="bill_optional_apt" class="form-control" placeholder="Apt 123" />
+                                </div>
+                            </div>
+                            
+                            <!--CITY DELIVERY-->
+                            <div class="form-group">
+                                <label for="bill_city" class="control-label col-md-auto">City:</label>
+                                <div class="col-md-auto">
+                                    <input type="text" name="bill_city" class="form-control" placeholder="City" />
+                                </div>
+                            </div>
+                            
+                            <!--STATE DELIVERY-->
+                            <div class="form-group">
+                                <label for="bill_state" class="control-label col-md-auto">State:</label>
+                                <div class="col-md-auto">
+                                    <input type="text" name="bill_state" class="form-control" placeholder="State" />
+                                </div>
+                            </div>
+                            
+                            <!--ZIP CODE DELIVERY-->
+                            <div class="form-group">
+                                <label for="bill_zip" class="control-label col-md-auto">Zip Code:</label>
+                                <div class="col-md-auto">
+                                    <input type="text" name="bill_zip" class="form-control" placeholder="Zip Code" />
+                                </div>
+                            </div>
+                            
+                            <!--CREDIT CARD NUMBER-->
+                            <div class="form-group">
+                                <label for="cc_number" class="control-label col-md-auto">Credit Card Number:</label>
+                                <div id="cc_number_div" class="col-md-auto">
+                                    <input type="text" name="cc_number" id="cc_number" class="form-control" />
+                                </div>
+                            </div>
+                            
+                            <!--CVC CODE-->
+                            <div class="form-group">
+                                <label for="cvc" class="control-label col-md-auto">CVC Code:</label>
+                                <div class="col-md-auto">
+                                    <input type="text" name="cvc" class="form-control" placeholder="123" />
+                                </div>
+                            </div>
+                            
+                            <!--EXPIRATION DATE-->
+                            <div class="form-group">
+                                <label for="bill_month" class="control-label col-md-auto">Expiration Date:</label>
+                                <!--MONTHS-->
+                                <div class="col-md-auto">
+                                    <select name="bill_month" class="form-control">
+                                        <option value="1">Jan</option>
+                                        <option value="2">Feb</option>
+                                        <option value="3">Mar</option>
+                                        <option value="4">Apr</option>
+                                        <option value="5">May</option>
+                                        <option value="6">Jun</option>
+                                        <option value="7">Jul</option>
+                                        <option value="8">Aug</option>
+                                        <option value="9">Sep</option>
+                                        <option value="10">Oct</option>
+                                        <option value="11">Nov</option>
+                                        <option value="12">Dec</option>
+                                    </select>
+                                </div>
+                                
+                                <!--YEARS-->
+                                <div class="col-md-auto">
+                                    <select name="bill_year" class="form-control">
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2023">2023</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <!--PLACE ORDER-->
+                    <div class="col-md-auto">
+                        <div id="all-submit-btn" class="form-group align-btn">
+                            <input id="form-submit" type="button" class="form control btn-lg" value="Place Your Order">
+                        </div>
+                    </div>
+                    
+                    <!--END TEXT-->
+
+                    <div id="end" class="hideEffect">
+                        <h1>Your Pizza is now on its way! Enjoy</h1>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    
+<!--FOOTER-->
+    <footer class="footer">
+        <div>
+            <p>Luigi's Pizza &copy; 2018</p>
+        </div>
+    </footer>
+
+ 
+    <script src="js/script.js"></script>
+</body>
+
+</html>
